@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border;  
+    }
+
+    .h1-custom {
+        @apply text-2xl font-bold text-white py-5 bg-blue-800; 
+      }
+    
+    .h2-custom {
+        @apply text-[1.6rem] font-semibold; 
+      }
+    
+    .h3-custom{
+        @apply text-2xl font-bold
+      }
+
+    .h4-custom {
+        @apply font-bold mt-3 text-[17px]; 
+      }
+
+    .li-h2{
+        @apply text-[20px] font-bold;
+    }
+
+    .li{
+        @apply bg-gray-800 text-white px-4 rounded-lg py-5;
+    }
+  }
+
+/* @layer components{
+    
+} */

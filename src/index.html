@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bg-blue-100">
+    
+    <header>
+        <h1 class="h1-custom text-center md:text-3xl font-sans">Weather Dashboard</h1>
+    </header>
+
+    <main class="gap-9 py-9 px-3 lg:flex">
+        <div class="space-y-4 lg:w-[550px] lg:px-4">
+            <h3 class="h3-custom font-sans">Enter a City Name</h3>
+
+            <div class="relative">
+                <input type="text" class="cityInput border p-2 rounded w-full" placeholder="Enter city..." />
+                <ul class="dropdown-menu hidden absolute z-10 bg-white border border-gray-300 rounded-md shadow-lg max-h-48 overflow-y-auto w-full cursor-pointer">
+                    <!-- List items will be inserted here -->
+                </ul>        
+                
+            </div>
+
+            
+            
+
+            <button id="searchButton" class="border border-black p-2 w-full bg-blue-600 text-white rounded-md">Search</button>
+
+            <div class="relative flex items-center justify-center text-2xl h-[1px] w-full py-6 bg-transparent text-black before:content-[''] before:flex-1 before:h-[1px] before:bg-black before:mr-2 after:content-[''] after:flex-1 after:h-[1px] after:bg-black after:ml-2">
+                or
+              </div>
+              
+
+            <button class="locationButton border border-black p-2 w-full bg-gray-600 text-white rounded-md">Use Current Location</button>
+        </div>
+
+        <div class="my-9 w-full lg:m-6">
+            <div class="currentWeather flex bg-blue-600 rounded-md text-white justify-between items-center p-5 lg:mx-7 capitalize">
+                <div>
+                    <h2 class="h2-custom">_____ ( ______ )</h2>
+                    <h4 class="h4-custom">Temp: __°C</h4>
+                    <h4 class="h4-custom">Wind: __M/S</h4>
+                    <h4 class="h4-custom">Humidity: __%</h4>
+                </div>             
+            </div>
+
+            <div class="lg:mx-7">
+                <h2 class="h2-custom my-6 font-sans">5 Days Forecast</h2>
+                <ul class="weatherCards grid grid-cols-2 gap-5 justify-between md:grid-cols-3 2xl:grid-cols-5">
+                    <li class="li">
+                        <h2 class="li-h2">( _____ )</h2>
+                        <h4 class="h4-custom">Temp: __°C</h4>
+                        <h4 class="h4-custom">Wind: __M/S</h4>
+                        <h4 class="h4-custom">Humidity: __%</h4>
+                    </li>
+
+                    <li class="li">
+                        <h2 class="li-h2">( _____ )</h2>
+                        <h4 class="h4-custom">Temp: __°C</h4>
+                        <h4 class="h4-custom">Wind: __M/S</h4>
+                        <h4 class="h4-custom">Humidity: __%</h4>
+                    </li>
+
+                    <li class="li">
+                        <h2 class="li-h2">( _____ )</h2>
+                        <h4 class="h4-custom">Temp: __°C</h4>
+                        <h4 class="h4-custom">Wind: __M/S</h4>
+                        <h4 class="h4-custom">Humidity: __%</h4>
+                    </li>
+
+                    <li class="li">
+                        <h2 class="li-h2">( _____ )</h2>
+                        <h4 class="h4-custom">Temp: __°C</h4>
+                        <h4 class="h4-custom">Wind: __M/S</h4>
+                        <h4 class="h4-custom">Humidity: __%</h4>
+                    </li>
+                    
+                    <li class="li">
+                        <h2 class="li-h2">( _____ )</h2>
+                        <h4 class="h4-custom">Temp: __°C</h4>
+                        <h4 class="h4-custom">Wind: __M/S</h4>
+                        <h4 class="h4-custom">Humidity: __%</h4>
+                    </li>           
+                </ul>
+            </div>
+
+        </div>
+        
+    </div>
+    </main>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
