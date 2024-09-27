@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecast Application</title>
     <link rel="stylesheet" href="./output.css">
+    <meta name="author" content="Arpit">
+    <meta name="keywords" content="weather forecasting, weather data, weather API, Tailwind CSS, HTML, JavaScript, forecast, local weather, city weather, live weather, weather updates, current weather">
+    <meta name="description" content="A weather forecast application built with JavaScript, HTML, and Tailwind CSS. This project fetches real-time weather data from an API and presents it in a user-friendly interface. Key features include location-based forecasts, current weather conditions, and extended forecasts for better weather insights.">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     
+    <title>Weather Forecast Application</title>
 </head>
 <body class="bg-blue-100">
     
@@ -15,9 +18,9 @@
         <h1 class="h1-custom text-center md:text-3xl font-sans">Weather Dashboard</h1>
     </header>
 
-    <main class="gap-9 py-9 px-3 lg:flex">
-        <div class="space-y-4 lg:w-[550px] lg:px-4">
-            <h3 class="h3-custom font-sans">Enter a City Name</h3>
+    <main class="gap-9 py-9 px-3 md:flex">
+        <div class="space-y-4 lg:w-[550px] lg:px-4 md:w-[300px]">
+            <h3 class="h3-custom font-sans md:text-xl 2xl:text-3xl">Enter a City Name</h3>
 
             <div class="relative">
                 <input type="text" class="cityInput border p-2 rounded w-full" placeholder="Enter city..." />
@@ -30,14 +33,14 @@
             
             
 
-            <button id="searchButton" class="border border-black p-2 w-full bg-blue-600 text-white rounded-md">Search</button>
+            <button id="searchButton" class="border border-black p-2 w-full bg-blue-600 hover:bg-blue-800 text-white rounded-md">Search</button>
 
             <div class="relative flex items-center justify-center text-2xl h-[1px] w-full py-6 bg-transparent text-black before:content-[''] before:flex-1 before:h-[1px] before:bg-black before:mr-2 after:content-[''] after:flex-1 after:h-[1px] after:bg-black after:ml-2">
                 or
               </div>
               
 
-            <button class="locationButton border border-black p-2 w-full bg-gray-600 text-white rounded-md">Use Current Location</button>
+            <button class="locationButton border border-black p-2 w-full bg-gray-600 hover:bg-gray-700 text-white rounded-md">Use Current Location</button>
         </div>
 
         <div class="my-9 w-full lg:m-6">
